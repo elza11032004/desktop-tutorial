@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/*обнуление стилей*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p {
+	padding: 5px 0;
+	margin-bottom: 0px;
+	color: rgb(255, 255, 255);
+}
+
+a {
+	color: rgb(255, 255, 255);
+	cursor:pointer;
+	text-decoration: none;
+}
+
+label {
+	color: rgb(255, 255, 255);
+	cursor:pointer;
+	text-decoration: none;
+	margin-left: 40px;
+	top: -30px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	object-fit: cover;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-small {
+	font-size: 12pt;
+	color: gray;
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+body{
+	max-width: 1440px; 
+	margin: 0 auto;
+	background: #000000;
+	font-family: Montserrat Alternates;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  input[type=checkbox] {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+div.content {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+div.head, .reg {
+	padding: 20px 0;
+	font-size: 20pt;
+	color: #fff;
+}
+
+div.wrap {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+div.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+div.row.at {
+	align-items: flex-start;
+}
+
+div.col {
+    width: 30%;
+    padding: 20px;
+    transition: .2s;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+div.col img {
+	width: 100%;
+	height: 500px;
+    margin-bottom: 10px;
+}
+
+/*шапка*/
+header {
+	background-color:#000000;
+	
+}
+
+header div.top a:hover {
+	text-decoration: none;
+}
+
+header ul, footer ul  {
+	list-style: none;
+	display: flex;
+	justify-content:space-around;
+}
+
+header ul li, footer ul li {
+	width: 30%;
+	padding: 20px 0;
+	transition: .2s;
+	text-align: center;
+}
+
+header button, footer button {
+	max-width: 60%;
+	margin: 0;
+}
+
+/*лого*/
+.logo img{
+	width: 200px;
+	margin-top: 10px;
+}
+.row span{
+	font-size: 20px;
+}
+
+/*фильтр*/
+  select{
+	border-color: #CD3838;
+	color: #fff;
+	background-color: #000000;
+	border: solid;
+	position: relative;
+	outline: none;
+	padding: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 550px;
+	}
+
+	select::after{
+	  content: "";
+	  display: block;
+	  width: 25px;
+	  height: 25px;
+	  position: absolute;
+	  right: 5px;
+	  top: 5px;
+	}
+
+span {
+	cursor: pointer;
+}
+
+span:hover {
+	text-decoration: underline;
+}
+
+select#category {
+	max-width: 30%;
+	border:1px solid #CD3838;
+}
+
+div.search__text{
+margin-left: 20px;	
+}
+
+ div.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+input{
+	border:solid 1px #ff0000;
+	width: 60%;
+	height: 50px;
+	margin-bottom: 10px;
+  }
+  input::placeholder{
+	color: #000000;
+	padding-left: 25px;
+  }
+
+  /*форма*/
+  form{
+	width: 75%;
+  }
+.forms, form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*поиск*/
+.poisk{
+	height: 40px;
+	margin-top: -2px;
+}
+form div.part {
+	display: flex;
+	align-items: center;
+}
+form button{
+	width: 200px;
+	border: none;
+	color: #fff;
+	background-color: #CD3838;
+	height: 40px;
+	margin-top: 30px;
+}
+form div.part > *:nth-child(1) {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+ .checkbox-round {
+	width: 1.3em;
+	height: 1.3em;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align:text-bottom;
+	border: 1px solid #000000;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+  }
+
+ .input label{
+  margin-left: 30px;
+  margin-top: 30px;
+ }
+ 
+ div.product div.image {
+	text-align: center;
+}
+
+ div.product img {
+	height: 350px;
+}
+div.product .text{
+	width: 70%;
+}
+div.product .text .image{
+	margin: 100px;
+	margin-left: -70px;
+}
+
+/*подвал*/
+footer {
+	margin-top: 40px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	padding-top: 20px;
+	color: #CD3838;
+}
+hr{
+border-color: #CD3838;
+width: 95%;
+}
+section{
+display: flex;
+justify-content: space-between;
+margin-top: 60px;
+}
+
+input[type=radio] {
+	width: 20px;
+	margin-top: -5px;
+	margin-left: 10px;
+}
